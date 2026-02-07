@@ -27,7 +27,7 @@ Cada tipo de virus cuenta con su propia página informativa.
 
 El proyecto está organizado de la siguiente manera:
 
-/proyecto-virus
+proyecto-virus/
 │
 ├── index.html
 ├── virus-respiratorios.html
@@ -40,11 +40,11 @@ El proyecto está organizado de la siguiente manera:
 │ ├── normalize.css
 │ └── styles.css
 │
-├── js/ 
-│ └── script.css
-|
+├── js/
+│ └── script.js
+│
 ├── img/
-│ ├── recursos de imagenes
+│ └── (recursos de imágenes)
 │
 └── README.md
 
@@ -53,3 +53,6 @@ El proyecto está organizado de la siguiente manera:
 - HTML5
 - CSS3
 - Google Fonts
+
+
+https://github.com/JhoIsaGG/ProyectoWeb1.0
