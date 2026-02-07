@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400..900&family=Raleway:wght@300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="img/favicon.webp" type="image/x-icon">
+    <title>Virus Médicos</title>
+</head>
+<body class="page">
+
+<header>
+    <h1 class="nombre-sitio">
+        🧬 Virus <span>Médicos</span>
+    </h1>
+</header>
+
+<!-- Navbar -->
+<div class="contenedor-navegacion">
+    <nav class="navegacion-principal contenedor">
+        <a href="#">Inicio</a>
+        <a href="#tipos-virus">Tipos de Virus</a>
+        <a href="mitos-realidades.html">Mitos y Realidades</a>
+    </nav>
+</div>
+
+<!-- Hero -->
+<section class="hero hero-virus">
+    <div class="hero-texto">
+        <h2>Conoce cómo afectan los virus al cuerpo humano</h2>
+    </div>
+</section>
+
+<main class="contenedor contenido-principal">
+
+    <!-- Introducción a Virus -->
+    <div class="contenedor-inicial">
+    <section class="contenedor-info bloque-con-imagen">
+        <div class="texto">
+            <h3>¿Qué son los virus médicos?</h3>
+            <p>
+                Los virus médicos son microorganismos microscópicos capaces de infectar al ser humano
+                y provocar distintas enfermedades. Aunque no son considerados seres vivos completos,
+                pueden reproducirse dentro de las células del cuerpo.
+            </p>
+        </div>
+        <div class="img-wrapper">
+            <img src="img/que-es-un-virus.webp" alt="Ilustración de virus">
+        </div>
+    </section>
+
+    <section class="contenedor-info bloque-info">
+        <div class="texto">
+            <h3>Estructura básica de un virus</h3>
+            <ul class="lista">
+                <li><strong>Material genético:</strong> ADN o ARN</li>
+                <li><strong>Cápside:</strong> protege el material genético</li>
+                <li><strong>Envoltura:</strong> ayuda a infectar células</li>
+            </ul>
+        </div>
+    </section>
+
+    </div>
+
+    <!-- Tipos de virus -->
+    <section id="tipos-virus">
+        <h2 class="text-center">Tipos de Virus Médicos</h2>
+
+        <!-- VIRUS RESPIRATORIOS -->
+        <a href="virus-respiratorios.html" class="virus-link" data-speed="0.2">
+            <div class="virus-horizontal">
+                <div class="img-wrapper virus-img">
+                    <img src="img/virus-respiratorio.jpg" alt="Virus respiratorios">
+                </div>
+                <div class="contenedor-info virus-texto">
+                    <h3>Virus Respiratorios</h3>
+                    <p>
+                        Afectan las vías respiratorias y los pulmones. Pueden causar síntomas
+                        como tos, fiebre y dificultad para respirar.
+                    </p>
+                    <p class="ejemplos">Ejemplos: Influenza, COVID-19</p>
+                </div>
+            </div>
+        </a>
+
+        <!-- VIRUS GASTROINTESTINALES -->
+        <a href="virus-gastrointestinales.html" class="virus-link">
+            <div class="virus-horizontal invertido">
+
+                <div class="contenedor-info virus-texto">
+                    <h3>Virus Gastrointestinales</h3>
+                    <p>
+                        Provocan infecciones en el sistema digestivo,
+                        causando diarrea, vómitos y deshidratación.
+                    </p>
+                    <p class="ejemplos">Ejemplos: Norovirus, Rotavirus</p>
+                </div>
+                                <div class="img-wrapper virus-img">
+                    <img src="img/virus-gastrointestinales.webp" alt="Virus gastrointestinales">
+                </div>
+            </div>
+        </a>
+
+        <!-- VIRUS POR SANGRE -->
+        <a href="virus-sangre.html" class="virus-link">
+            <div class="virus-horizontal">
+                <div class="img-wrapper virus-img">
+                    <img src="img/virus-sangre.webp" alt="Virus transmitidos por sangre">
+                </div>
+                <div class="contenedor-info virus-texto">
+                    <h3>Virus Transmitidos por Sangre</h3>
+                    <p>
+                        Se transmiten mediante contacto con fluidos corporales
+                        y pueden causar enfermedades crónicas.
+                    </p>
+                    <p class="ejemplos">Ejemplos: VIH, Hepatitis B y C</p>
+                </div>
+            </div>
+        </a>
+
+        <!-- VIRUS DE LA PIEL -->
+        <a href="virus-piel.html" class="virus-link">
+            <div class="virus-horizontal invertido">
+                <div class="contenedor-info virus-texto">
+                    <h3>Virus que Afectan la Piel</h3>
+                    <p>
+                        Causan lesiones cutáneas o en mucosas,
+                        algunas visibles y otras no.
+                    </p>
+                    <p class="ejemplos">Ejemplos: VPH, Herpes</p>
+                </div>
+                                <div class="img-wrapper virus-img">
+                    <img src="img/virus-piel.avif" alt="Virus de la piel">
+                </div>
+            </div>
+        </a>
+
+        <p class="nota-click">
+            👉 Haz clic en cada bloque para conocer más sobre ese tipo de virus
+        </p>
+
+    </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="site-footer">
+    <div class="contenedor footer-grid">
+
+        <div class="footer-col">
+            <h4>Sobre los Virus</h4>
+            <a href="index.html">¿Qué son los virus?</a>
+        </div>
+        <div class="footer-col">
+            <h4>Tipos de virus</h4>
+            <a href="virus-respiratorios.html">Virus Respiratorios</a>
+            <a href="virus-gastrointestinales.html">Virus Gastrointestinales</a>
+            <a href="virus-sangre.html">Virus por la Sangre</a>
+            <a href="virus-piel.html">Virus de la Piel</a>
+        </div>
+        <div class="footer-col">
+            <h4>Mitos y Realidades</h4>
+            <a href="mitos-realidades.html">Mitos y Realidades</a>
+        </div>
+
+    </div>
+
+    <p class="copyright">
+     <a href="chivo.html">- </a>Virus Médicos · Todos los derechos reservados &copy; 2026
+    </p>
+</footer>
+
+</body>
+</html>

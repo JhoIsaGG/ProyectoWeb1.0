@@ -1,0 +1,370 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+/* PANEOS */
+
+@keyframes pageEnter {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.page {
+  animation: pageEnter 0.8s ease-out;
+}
+
+
+/* TITULOS */
+
+h1, h2, h3, h4 {
+    margin: 0 0 3rem 0;
+}
+
+h1 { font-size: 5rem; }
+h2 { font-size: 4rem; }
+h3 { font-size: 3rem; }
+h4 { font-size: 2.2rem; }
+
+/* GENERALES */
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.contenedor {
+    max-width: 180rem;
+    margin: 0 auto;
+    display: grid;
+    place-items: center;
+}
+
+/* HEADER */
+
+.nombre-sitio {
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.nombre-sitio span {
+    color: #1ddae8;
+}
+
+/* NAVEGACIÓN */
+
+.contenedor-navegacion {
+    border-top: 0.1rem solid #b7b8f5;
+}
+
+.navegacion-principal {
+    padding: 2rem 6rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* HERO */
+.hero-virus {
+    background-image: linear-gradient(
+        rgba(0,0,0,.5),
+        rgba(0,0,0,.5)
+    ), url("../img/hero-index.jpg");
+    height: 40rem;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+.hero-respiratorio {
+    background-image: linear-gradient(
+        rgba(0,0,0,.5),
+        rgba(0,0,0,.5)
+    ), url("../img/virus-respiratorio.jpg");
+    height: 40rem;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+.hero-piel {
+    background-image: linear-gradient(
+        rgba(0,0,0,.5),
+        rgba(0,0,0,.5)
+    ), url("../img/virus-piel.avif");
+    height: 40rem;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+.hero-sangre {
+    background-image: linear-gradient(
+        rgba(0,0,0,.5),
+        rgba(0,0,0,.5)
+    ), url("../img/virus-sangre.webp");
+    height: 40rem;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+.hero-gastrointestinal {
+    background-image: linear-gradient(
+        rgba(0,0,0,.5),
+        rgba(0,0,0,.5)
+    ), url("../img/virus-gastrointestinales.webp");
+    height: 40rem;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+.hero-mitos {
+    background-image: linear-gradient(
+        rgba(0,0,0,.5),
+        rgba(0,0,0,.5)
+    ), url("../img/mitos-realidades.jpg");
+    height: 40rem;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+.hero-texto {
+    color: white;
+    max-width: 60rem;
+    margin-left: 10%;
+}
+
+/* CONTENIDO */
+
+.contenido-principal {
+    padding-top: 5rem;
+}
+
+.contenedor-info {
+    background-color: #ffff;
+    padding: 4rem 5rem;
+    border-radius: 2rem;
+}
+.bloque-info {
+    margin-bottom: 5rem;
+
+}
+
+.lista li {
+    margin-bottom: 1rem;
+}
+
+.contenedor-inicial {
+    display: grid;
+    place-items: center;
+    margin: 5rem 2rem;
+    background-color: #2E7D32;
+    border-radius: 2rem;
+}
+
+.contenedor-final {
+    display: grid;
+    place-items: center;
+    margin: 5rem 2rem;
+    background-color: #1565C0;
+    border-radius: 2rem;
+    color:white;
+}
+
+/* BLOQUES CON IMAGEN */
+.bloque-con-imagen {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    margin: 3rem 5rem;
+}
+
+.bloque-con-imagen img {
+    padding-right: 2rem;
+    width: 30rem;
+    height: auto;
+}
+
+.bloque-con-imagen.invertido {
+    grid-template-columns: auto 2fr;
+}
+
+.img-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* TIPOS DE VIRUS */
+.virus-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.virus-horizontal {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 4rem;
+    align-items: center;
+    margin: 5rem;
+    padding: 3rem;
+    border-radius: 1.5rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: #1565C0;
+}
+
+.virus-horizontal.invertido {
+    grid-template-columns: 2fr 1fr;
+}
+
+.virus-horizontal:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.15);
+    cursor: pointer;
+}
+
+.virus-img img {
+    width: 40rem;
+    border-radius: 1rem;
+}
+
+.ejemplos {
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.nota-click {
+    text-align: center;
+    font-style: italic;
+    margin-top: 4rem;
+}
+
+/* TARJETAS DE VIRUS */
+
+.grid-virus {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 3rem;
+}
+
+.card-virus {
+    background-color: #f2f6ff;
+    padding: 3rem;
+    border-radius: 1rem;
+    border-left: 0.5rem solid #037bc0;
+}
+
+.card-virus ul {
+    padding-left: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+/* MITOS Y REALIDADES */
+
+.grid-mitos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    margin: 4rem;
+}
+
+.card-mito,
+.card-realidad {
+    padding: 3rem;
+    border-radius: 1.5rem;
+}
+
+.card-mito {
+    background-color: #ffe5e5;
+    border-left: 0.5rem solid #e63946;
+}
+
+.card-realidad {
+    background-color: #e5f6ee;
+    border-left: 0.5rem solid #2a9d8f;
+}
+
+.card-mito h4,
+.card-realidad h4 {
+    margin-bottom: 1.5rem;
+}
+
+
+
+
+/* FOOTER */
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 4rem;
+}
+
+.footer-col h4 {
+    margin-bottom: 2rem;
+}
+
+.footer-col a {
+    display: block;
+    margin-bottom: 1rem;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.footer-col a:hover {
+    color: #037bc0;
+}
+
+.site-footer {
+    border-top: 0.1rem solid #b7b8f5;
+    margin-top: 6rem;
+    padding: 5rem 0 3rem 0;
+}
+
+.copyright {
+    text-align: center;
+    font-weight: 700;
+}
+
+
+/* USO ESPECIAL (No vale si no se descubre) */
+
+.chivo {
+    min-height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.juego {
+    display: none;
+    justify-content: center;
+    margin: 5rem 0;
+}
