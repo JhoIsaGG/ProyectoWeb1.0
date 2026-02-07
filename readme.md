@@ -27,7 +27,7 @@ Cada tipo de virus cuenta con su propia página informativa.
 
 El proyecto está organizado de la siguiente manera:
 
-proyecto-virus/
+Proyecto1/
 │
 ├── index.html
 ├── virus-respiratorios.html
