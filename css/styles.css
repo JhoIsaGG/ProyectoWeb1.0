@@ -83,6 +83,23 @@ a {
     justify-content: space-between;
 }
 
+/* Wrapper solo para alinear botón */
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Botón oculto en desktop */
+.menu-toggle {
+    display: none;
+    font-size: 3rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+
 /* HERO */
 .hero-virus {
     background-image: linear-gradient(
@@ -171,8 +188,7 @@ a {
     border-radius: 2rem;
 }
 .bloque-info {
-    margin-bottom: 5rem;
-
+    margin: 10% 10%;
 }
 
 .lista li {
@@ -207,7 +223,8 @@ a {
 
 .bloque-con-imagen img {
     padding-right: 2rem;
-    width: 30rem;
+    width: 100%;
+    max-width: 30rem;
     height: auto;
 }
 
@@ -223,6 +240,10 @@ a {
 
 
 /* TIPOS DE VIRUS */
+.tipos-virus {
+}
+
+
 .virus-link {
     text-decoration: none;
     color: inherit;
@@ -231,16 +252,18 @@ a {
 .virus-horizontal {
     display: grid;
     grid-template-columns: 1fr 2fr;
+    grid-template-areas: "imagen texto";
     gap: 4rem;
     align-items: center;
-    margin: 5rem;
-    padding: 3rem;
+    margin: 5rem 0;
+    padding: 3rem 5rem;
     border-radius: 1.5rem;
     transition: transform 0.3s, box-shadow 0.3s;
     background-color: #1565C0;
 }
 
 .virus-horizontal.invertido {
+    grid-template-areas: "texto imagen";
     grid-template-columns: 2fr 1fr;
 }
 
@@ -250,9 +273,17 @@ a {
     cursor: pointer;
 }
 
+.virus-texto{
+    grid-area: texto;
+}
+
+.virus-img {
+    grid-area: imagen;
+}
+
 .virus-img img {
-    width: 40rem;
-    border-radius: 1rem;
+    width: 100%;
+    max-width: 40rem;
 }
 
 .ejemplos {
@@ -351,6 +382,7 @@ a {
 .copyright {
     text-align: center;
     font-weight: 700;
+    width: 80%;
 }
 
 
@@ -367,4 +399,98 @@ a {
     display: none;
     justify-content: center;
     margin: 5rem 0;
+}
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 772px) {
+
+    html {
+        font-size: 55%;
+    }
+
+    h1 { font-size: 3.2rem; }
+    h2 { font-size: 2.6rem; }
+    h3 { font-size: 2.2rem; }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .navegacion-principal {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: white;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        padding: 2rem 0;
+
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease;
+    }
+
+    .navegacion-principal.activo {
+        max-height: 300px;
+    }
+
+    .contenedor-navegacion {
+        position: relative;
+    }
+
+    .contenedor {
+        padding: 0 2rem;
+    }
+
+    .bloque-con-imagen {
+        display: flex;
+        flex-direction: column;
+        margin: 3rem 2rem;
+    }
+
+    .virus-horizontal {
+        display: flex;
+        flex-direction: column;
+        margin: 3rem 2rem;
+        padding: 2rem;
+    }
+
+    .hero-virus,
+    .hero-respiratorio,
+    .hero-piel,
+    .hero-sangre,
+    .hero-gastrointestinal,
+    .hero-mitos {
+        height: 30rem;
+    }
+
+    .contenedor-info {
+        display: flex;
+        flex-direction: column;
+        padding: 2.5rem;
+    }
+
+    .contenedor-final {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .grid-mitos {
+        display: flex;
+        flex-direction: column;
+        margin: 2rem;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .footer-col {
+        margin-bottom: 3rem;
+    }
 }

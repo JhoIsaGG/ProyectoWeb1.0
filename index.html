@@ -21,6 +21,9 @@
 
 <!-- Navbar -->
 <div class="contenedor-navegacion">
+    <button class="menu-toggle" aria-label="Abrir menú">
+        ☰
+    </button>
     <nav class="navegacion-principal contenedor">
         <a href="#">Inicio</a>
         <a href="#tipos-virus">Tipos de Virus</a>
@@ -70,74 +73,73 @@
     <section id="tipos-virus">
         <h2 class="text-center">Tipos de Virus Médicos</h2>
 
-        <!-- VIRUS RESPIRATORIOS -->
-        <a href="virus-respiratorios.html" class="virus-link" data-speed="0.2">
-            <div class="virus-horizontal">
-                <div class="img-wrapper virus-img">
-                    <img src="img/virus-respiratorio.jpg" alt="Virus respiratorios">
-                </div>
-                <div class="contenedor-info virus-texto">
-                    <h3>Virus Respiratorios</h3>
-                    <p>
-                        Afectan las vías respiratorias y los pulmones. Pueden causar síntomas
-                        como tos, fiebre y dificultad para respirar.
-                    </p>
-                    <p class="ejemplos">Ejemplos: Influenza, COVID-19</p>
-                </div>
+            <!-- VIRUS RESPIRATORIOS -->
+    <a href="virus-respiratorios.html" class="virus-link">
+        <div class="virus-horizontal">
+            <div class="contenedor-info virus-texto">
+                <h3>Virus Respiratorios</h3>
+                <p>
+                    Afectan las vías respiratorias y los pulmones. 
+                    Pueden causar síntomas como tos, fiebre y dificultad para respirar.
+                </p>
+                <p class="ejemplos">Ejemplos: Influenza, COVID-19</p>
             </div>
-        </a>
-
-        <!-- VIRUS GASTROINTESTINALES -->
-        <a href="virus-gastrointestinales.html" class="virus-link">
-            <div class="virus-horizontal invertido">
-
-                <div class="contenedor-info virus-texto">
-                    <h3>Virus Gastrointestinales</h3>
-                    <p>
-                        Provocan infecciones en el sistema digestivo,
-                        causando diarrea, vómitos y deshidratación.
-                    </p>
-                    <p class="ejemplos">Ejemplos: Norovirus, Rotavirus</p>
-                </div>
-                                <div class="img-wrapper virus-img">
-                    <img src="img/virus-gastrointestinales.webp" alt="Virus gastrointestinales">
-                </div>
+            <div class="img-wrapper virus-img">
+                <img src="img/virus-respiratorio.jpg" alt="Virus respiratorios">
             </div>
-        </a>
+        </div>
+    </a>
 
-        <!-- VIRUS POR SANGRE -->
-        <a href="virus-sangre.html" class="virus-link">
-            <div class="virus-horizontal">
-                <div class="img-wrapper virus-img">
-                    <img src="img/virus-sangre.webp" alt="Virus transmitidos por sangre">
-                </div>
-                <div class="contenedor-info virus-texto">
-                    <h3>Virus Transmitidos por Sangre</h3>
-                    <p>
-                        Se transmiten mediante contacto con fluidos corporales
-                        y pueden causar enfermedades crónicas.
-                    </p>
-                    <p class="ejemplos">Ejemplos: VIH, Hepatitis B y C</p>
-                </div>
+    <!-- VIRUS GASTROINTESTINALES -->
+    <a href="virus-gastrointestinales.html" class="virus-link">
+        <div class="virus-horizontal invertido">
+            <div class="contenedor-info virus-texto">
+                <h3>Virus Gastrointestinales</h3>
+                <p>
+                    Provocan infecciones en el sistema digestivo,
+                    causando diarrea, vómitos y deshidratación.
+                </p>
+                <p class="ejemplos">Ejemplos: Norovirus, Rotavirus</p>
             </div>
-        </a>
+            <div class="img-wrapper virus-img">
+                <img src="img/virus-gastrointestinales.webp" alt="Virus gastrointestinales">
+            </div>
+        </div>
+    </a>
 
-        <!-- VIRUS DE LA PIEL -->
-        <a href="virus-piel.html" class="virus-link">
-            <div class="virus-horizontal invertido">
-                <div class="contenedor-info virus-texto">
-                    <h3>Virus que Afectan la Piel</h3>
-                    <p>
-                        Causan lesiones cutáneas o en mucosas,
-                        algunas visibles y otras no.
-                    </p>
-                    <p class="ejemplos">Ejemplos: VPH, Herpes</p>
-                </div>
-                                <div class="img-wrapper virus-img">
-                    <img src="img/virus-piel.avif" alt="Virus de la piel">
-                </div>
+    <!-- VIRUS POR SANGRE -->
+    <a href="virus-sangre.html" class="virus-link">
+        <div class="virus-horizontal">
+            <div class="contenedor-info virus-texto">
+                <h3>Virus Transmitidos por Sangre</h3>
+                <p>
+                    Se transmiten mediante contacto con fluidos corporales
+                    y pueden causar enfermedades crónicas.
+                </p>
+                <p class="ejemplos">Ejemplos: VIH, Hepatitis B y C</p>
             </div>
-        </a>
+            <div class="img-wrapper virus-img">
+                <img src="img/virus-sangre.webp" alt="Virus transmitidos por sangre">
+            </div>
+        </div>
+    </a>
+
+    <!-- VIRUS DE LA PIEL -->
+    <a href="virus-piel.html" class="virus-link">
+        <div class="virus-horizontal invertido">
+            <div class="contenedor-info virus-texto">
+                <h3>Virus que Afectan la Piel</h3>
+                <p>
+                    Causan lesiones cutáneas o en mucosas,
+                    algunas visibles y otras no.
+                </p>
+                <p class="ejemplos">Ejemplos: VPH, Herpes</p>
+            </div>
+            <div class="img-wrapper virus-img">
+                <img src="img/virus-piel.avif" alt="Virus de la piel">
+            </div>
+        </div>
+    </a>
 
         <p class="nota-click">
             👉 Haz clic en cada bloque para conocer más sobre ese tipo de virus
@@ -166,13 +168,14 @@
             <h4>Mitos y Realidades</h4>
             <a href="mitos-realidades.html">Mitos y Realidades</a>
         </div>
+        <p class="copyright">
+     <a href="chivo.html">- </a>Virus Médicos · Todos los derechos reservados &copy; 2026
+    </p>
 
     </div>
 
-    <p class="copyright">
-     <a href="chivo.html">- </a>Virus Médicos · Todos los derechos reservados &copy; 2026
-    </p>
+    
 </footer>
-
+<script src="js/script.js"></script>
 </body>
 </html>
